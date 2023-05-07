@@ -3,7 +3,7 @@ import Photo from '@public/photo.png'
 
 const Hello = () => (
     <div
-        className='flex min-h-screen bg-black bg-no-repeat bg-center bg-scroll lg:bg-right-bottom lg:bg-[length:1000px_1000px]'
+        className='flex min-h-screen bg-black bg-no-repeat bg-center bg-scroll lg:bg-right-bottom'
         style={{backgroundImage: `url(${Photo.src})`}}
     >
         <div className='mx-16 mt-64 lg:basis-1/3 2xl:basis-1/2 text-white'>
