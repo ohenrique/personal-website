@@ -1,9 +1,11 @@
 import Hello from '@pages/hello'
-
+import Resume from '@pages/resume'
 export default function Home() {
+
   return (
-    <main className="min-h-screen items-center justify-between">
+    <main >
       <Hello />
+      <Resume />
     </main>
   )
 }

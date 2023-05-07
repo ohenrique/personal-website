@@ -11,8 +11,8 @@ import GraphDeveloperSkills from '@public/graph-developer-skills.png'
 import GraphManagerSkills from '@public/graph-manager-skills.png'
 
 const Resume = () => (
-    <div className="flex flex-wrap bg-white min-h-screen items-center py-16">
-        <div className="flex flex-wrap justify-around basis-full">
+    <div className="flex flex-wrap bg-white min-h-screen items-center py-16 space-y-10 sm:space-y-0">
+        <div className="flex flex-wrap justify-around basis-full space-y-10 sm:space-y-0">
             <ComparingSkills
                 title="Development frameworks"
                 skills={[
@@ -32,13 +32,13 @@ const Resume = () => (
                     { name: "Education", icon: EducationIcon.src, percent: 20 },
                 ]} />
         </div>
-        <div className="flex flex-wrap justify-around basis-full">
+        <div className="flex flex-wrap justify-around basis-full space-y-10 md:space-y-0">
             <div className='md:w-1/2 max-w-4xl'>
-                <p className="font-bold text-3xl text-center">Developer skills</p>
+                <p className="font-bold text-3xl lg:text-4xl text-center">Developer skills</p>
                 <img className='inline' src={GraphDeveloperSkills.src} />
             </div>
             <div className='md:w-1/2 max-w-4xl'>
-                <p className="font-bold text-3xl text-center">Manager skills</p>
+                <p className="font-bold text-3xl lg:text-4xl text-center">Manager skills</p>
                 <img className='inline' src={GraphManagerSkills.src} />
             </div>
         </div>
@@ -81,7 +81,7 @@ interface ComparingSkills {
 }
 const ComparingSkills = ({ title, skills }: ComparingSkills) => (
     <div>
-        <p className="font-bold text-3xl text-center">{title}</p>
+        <p className="font-bold text-3xl lg:text-4xl text-center mb-9">{title}</p>
         {skills.map(skill => (<BarSkill {...skill} />))}
     </div>
 )
@@ -99,7 +99,7 @@ interface BarSkill {
 }
 const BarSkill = ({ name, icon, percent }: BarSkill) => (
     <div className="flex justify-center my-3">
-        <div className="font-light text-2xl w-32 text-right">{name}</div>
+        <div className="font-light text-2xl lg:text-3xl w-32 lg:w-44 text-right">{name}</div>
         <img className='h-8 mx-4' src={icon} />
         {Bar(percent)}
     </div>
