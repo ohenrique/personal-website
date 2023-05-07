@@ -12,7 +12,7 @@ module.exports = {
         '12': '3rem',
       },
       colors: {
-        'black': '#1A1A1A',
+        'dark-gray': '#1A1A1A',
       },
     },
   },
