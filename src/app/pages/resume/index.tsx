@@ -82,7 +82,7 @@ interface ComparingSkills {
 const ComparingSkills = ({ title, skills }: ComparingSkills) => (
     <div>
         <p className="font-bold text-3xl lg:text-4xl text-center mb-9">{title}</p>
-        {skills.map(skill => (<BarSkill {...skill} />))}
+        {skills.map(skill => (<BarSkill key={crypto.randomUUID()} {...skill} />))}
     </div>
 )
 
