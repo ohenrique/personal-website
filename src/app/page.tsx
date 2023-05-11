@@ -2,6 +2,7 @@ import Hello from '@pages/hello'
 import Resume from '@pages/resume'
 import Portifolio from '@pages/portfolio'
 import Contact from '@pages/contact'
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Resume />
       <Portifolio />
       <Contact />
+      <Analytics />
     </main>
   )
 }
