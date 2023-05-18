@@ -46,9 +46,9 @@ const Contact = () => (
             </div>
         </div>
         <form className="flex flex-col lg:basis-1/2 space-y-5 grow" action="mailto:henrique.oliverz@gmail.com">
-            <div className="space-x-5 flex items-stretch">
-                <TextInput className="grow" type={TextInputTypes.text} name="name" placeholder="Your name" />
-                <TextInput className="grow" type={TextInputTypes.email} name="email" placeholder="Your email" />
+            <div className="space-y-5 sm:space-y-0 sm:space-x-5 sm:flex">
+                <TextInput className="w-full" type={TextInputTypes.text} name="name" placeholder="Your name" />
+                <TextInput className="w-full" type={TextInputTypes.email} name="email" placeholder="Your email" />
             </div>
             <TextInput type={TextInputTypes.text} name="subject" placeholder="Your subject" />
             <textarea className="resize-none p-2 grow" wrap="true" name="body" placeholder="Your message" maxLength={300} />
