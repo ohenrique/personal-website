@@ -58,7 +58,7 @@ const Contact = () => (
             {contactItems.map(contactItem => (
                 <div key={crypto.randomUUID()} className="flex flex-initial space-x-8 py-3">
                     <Image src={contactItem.icon.src} alt="" width={contactItem.icon.width} height={contactItem.icon.height} />
-                    <p className="text-2xl">{contactItem.description}</p>
+                    <p className="text-xl">{contactItem.description}</p>
                 </div>
             ))}
         </div>

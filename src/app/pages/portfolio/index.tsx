@@ -59,7 +59,7 @@ const Portifolio = () => {
         title: 'Midway Financeira', image: MidwayBanner.src, imageAlign: 'left', icon: MidwayIcon
     }, {
         description: `The banQi is a financial services platform in Brazil that provides digital banking services, primarily targeting lower-income individuals. It allows users to open a digital bank account quickly and easily, and offers various banking activities such as receiving salaries, making deposits and withdrawals, transferring money, paying bills, accessing credit, and using a prepaid card for purchases and withdrawals.`,
-        title: 'banQi - Casas Bahia', image: banQiBanner.src, imageAlign: 'right', icon: banQiIcon
+        title: 'banQi - Casas Bahia', image: banQiBanner.src, icon: banQiIcon
     }]
 
     return (
