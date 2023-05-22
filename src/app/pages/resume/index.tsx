@@ -1,3 +1,5 @@
+import Image, { StaticImageData } from 'next/image';
+
 import ReactIcon from '@public/react-icon.png'
 import NodeIcon from '@public/node-icon.png'
 import CsharpIcon from '@public/csharp-icon.png'
@@ -16,30 +18,30 @@ const Resume = () => (
             <ComparingSkills
                 title="Development frameworks"
                 skills={[
-                    { name: "React Native", icon: ReactIcon.src, percent: 100 },
-                    { name: "Node.js", icon: NodeIcon.src, percent: 70 },
-                    { name: "React", icon: ReactIcon.src, percent: 80 },
-                    { name: ".NET", icon: CsharpIcon.src, percent: 30 },
-                    { name: "Angular", icon: AngularIcon.src, percent: 60 },
+                    { name: "React Native", icon: ReactIcon, percent: 100 },
+                    { name: "Node.js", icon: NodeIcon, percent: 70 },
+                    { name: "React", icon: ReactIcon, percent: 80 },
+                    { name: ".NET", icon: CsharpIcon, percent: 30 },
+                    { name: "Angular", icon: AngularIcon, percent: 60 },
                 ]} />
             <ComparingSkills
                 title="Business frameworks"
                 skills={[
-                    { name: "Finance", icon: FinanceIcon.src, percent: 100 },
-                    { name: "Retail", icon: RetailIcon.src, percent: 80 },
-                    { name: "Entertainment", icon: EntertainmentIcon.src, percent: 60 },
-                    { name: "Health", icon: HealthIcon.src, percent: 20 },
-                    { name: "Education", icon: EducationIcon.src, percent: 20 },
+                    { name: "Finance", icon: FinanceIcon, percent: 100 },
+                    { name: "Retail", icon: RetailIcon, percent: 80 },
+                    { name: "Entertainment", icon: EntertainmentIcon, percent: 60 },
+                    { name: "Health", icon: HealthIcon, percent: 20 },
+                    { name: "Education", icon: EducationIcon, percent: 20 },
                 ]} />
         </div>
         <div className="flex flex-wrap justify-around basis-full space-y-10 md:space-y-0">
             <div className='md:w-1/2 max-w-4xl'>
                 <p className="font-bold text-3xl lg:text-4xl text-center">Developer skills</p>
-                <img className='inline' src={GraphDeveloperSkills.src} />
+                <Image className='inline' src={GraphDeveloperSkills} alt='' />
             </div>
             <div className='md:w-1/2 max-w-4xl'>
                 <p className="font-bold text-3xl lg:text-4xl text-center">Manager skills</p>
-                <img className='inline' src={GraphManagerSkills.src} />
+                <Image className='inline' src={GraphManagerSkills} alt='' />
             </div>
         </div>
     </div>
@@ -94,13 +96,13 @@ const Bar = (percent: number) => (
 
 interface BarSkill {
     name: string
-    icon: string
+    icon: StaticImageData
     percent: number
 }
 const BarSkill = ({ name, icon, percent }: BarSkill) => (
     <div className="flex justify-center my-3">
-        <div className="font-light text-2xl lg:text-3xl w-32 lg:w-44 text-right">{name}</div>
-        <img className='h-8 mx-4' src={icon} />
+        <div className="font-light text-xl md:text-2xl lg:text-3xl w-32 lg:w-44 text-right">{name}</div>
+        <Image className='w-8 mx-4 object-fill' src={icon} alt='' />
         {Bar(percent)}
     </div>
 )
