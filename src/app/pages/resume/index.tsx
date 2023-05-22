@@ -120,7 +120,7 @@ const ComparingSkills = ({ title, skills }: ComparingSkills) => (
 
 const Bar = (percent: number) => (
     <div className="w-44 text-neutral-300 align-middle">
-        <div className="bg-neutral-300 pl-2" style={{ width: `${percent}%` }}>.</div>
+        <div className="bg-neutral-300 pl-2 select-none" style={{ width: `${percent}%` }}>.</div>
     </div>
 )
 
