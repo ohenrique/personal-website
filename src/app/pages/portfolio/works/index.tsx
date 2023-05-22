@@ -25,7 +25,7 @@ const Works = () => (
                 )}
             renderArrowNext={(onClickHandler, hasNext) =>
                 hasNext && (
-                    <a className='cursor-pointer z-50 absolute w-5 h-5 md:w-8 md:h-8 right-10 top-[90vh] md:top-[50vh] shadow-2xl' onClick={onClickHandler}>
+                    <a className='cursor-pointer first-of-type:animate-bounce hover:animate-none z-50 absolute w-5 h-5 md:w-8 md:h-8 right-10 top-[90vh] md:top-[50vh] shadow-2xl' onClick={onClickHandler}>
                         <Image color='white' src={RightArrow.src} alt='' sizes={`max-width: ${RightArrow.width}`} fill={true} />
                     </a>
                 )
