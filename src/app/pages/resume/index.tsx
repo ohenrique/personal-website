@@ -46,7 +46,7 @@ const Resume = () => {
                         { name: "Angular", icon: AngularIcon, percent: 60 },
                     ]} />
                 <ComparingSkills
-                    title="Business frameworks"
+                    title="Business areas"
                     skills={[
                         { name: "Finance", icon: FinanceIcon, percent: 100 },
                         { name: "Retail", icon: RetailIcon, percent: 80 },
