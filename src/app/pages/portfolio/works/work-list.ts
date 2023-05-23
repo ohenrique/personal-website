@@ -31,7 +31,7 @@ const WorkList = [{
     description: `The Formula 1 Brazil Grand Prix is a renowned motorsport event held annually in Brazil. Hosted at the iconic Interlagos circuit in São Paulo, it attracts top racing teams and drivers from around the world. With a rich history and a challenging track, the race is known for its high-speed action and passionate fan base, making it one of the most prestigious events in the Formula 1 championship.`,
     title: 'GP Formula 1 - Brasil', image: GpBanner.src, icon: GpIcon
 }, {
-    description: `Ponte Preta is a Brazilian soccer team based in Campinas. Founded in 1900, it has a rich history and is known for its passionate fan base. Competing in national leagues, Ponte Preta has had notable achievements and remains a respected team in Brazilian football.`,
+    description: `Radio Itatiaia is a renowned Brazilian radio station based in Belo Horizonte. Established in 1952, it offers a variety of content, including news, sports, and entertainment. The station is highly regarded for its comprehensive sports coverage, with a focus on football, featuring live broadcasts, commentary, and analysis. Radio Itatiaia has a strong presence and is widely recognized for its influential role in broadcasting and engaging its audience.`,
     title: 'Rádio Itaitiaia', image: ItatiaiaBanner.src, icon: ItatiaiaIcon
 }, {
     description: `Ponte Preta is a Brazilian professional soccer team based in Campinas, São Paulo. Founded in 1900, it is one of the oldest and most traditional clubs in the country. The team plays in black and white colors and has a passionate fan base. Ponte Preta has had notable achievements in regional competitions and the Copa do Brasil.`,
